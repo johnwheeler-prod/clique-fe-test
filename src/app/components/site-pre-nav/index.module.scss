@@ -1,0 +1,40 @@
+.prenav {
+  background: url("/assets/prenav-bg.jpg");
+  background-position: 55% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0.75rem;
+
+  &Flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+    &End {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      &Link {
+        text-decoration: none;
+        font-size: 0.938rem;
+        font-weight: 500;
+        line-height: 1.134rem;
+        color: #000000;
+      }
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 90rem;
+  padding-inline: 3rem;
+}
