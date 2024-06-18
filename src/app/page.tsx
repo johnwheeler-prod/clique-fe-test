@@ -14,6 +14,7 @@ export default function Home() {
       <Hero />
       <News />
       <About />
+      <Form />
     </main>
   );
 }
@@ -303,6 +304,71 @@ const About = () => {
               </svg>
             </Link>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Form = () => {
+  // TODO: replace this filler form with a react hubspot form for ease of use,
+  // functionality, and ability to hand off to a client and have them collect,
+  // process, and analyze their own data.
+  return (
+    <section className={styles.form}>
+      <div className={styles.container}>
+        <div className={styles.formWell}>
+          <div className={styles.formWellHeader}>
+            <p className={styles.overlineDark}>Form Field CallOUT IPSUM</p>
+            <h2>A simple headline facu consecteur</h2>
+            <p>
+              Nisi a id sit pulvinar non. Quis tristique et sem cras morbi
+              lacus. Magna faucibus ultrices sed consectetur risus et amet.{" "}
+            </p>
+          </div>
+          <form action="" className={styles.formWellForm}>
+            <div className={styles.formWellFormFlex}>
+              <div>
+                <label htmlFor="fname">First Name</label>
+                <input type="text" id="fname" name="fname" />
+              </div>
+              <div>
+                <label htmlFor="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" />
+              </div>
+            </div>
+            <div className={styles.formWellFormFlex}>
+              <div>
+                <label htmlFor="email">Email Address</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div>
+                <label htmlFor="emailConfirm">Confirm Email Address</label>
+                <input type="email" id="emailConfirm" name="emailConfirm" />
+              </div>
+            </div>
+            <div>
+              <label htmlFor="phone">Phone Number</label>
+              <input type="phone" id="phone" name="phone" />
+            </div>
+            <div>
+              <label htmlFor="company">Company</label>
+              <input type="text" id="company" name="company" />
+            </div>
+            <div>
+              <label htmlFor="audience">Audience Group</label>
+              <select id="audience">
+                <option value="">Select</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+            <div>
+              <label htmlFor="message">Message (Paragraph of text)</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+          </form>
         </div>
       </div>
     </section>

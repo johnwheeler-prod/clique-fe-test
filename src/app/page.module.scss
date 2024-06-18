@@ -381,4 +381,50 @@
 }
 
 .form {
+  position: relative;
+  margin-block-start: 7rem;
+  margin-block-end: 3.688rem;
+
+  &Well {
+    min-height: 58.625rem;
+    background-color: #f1f1f1;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-inline: -7.063rem;
+
+    padding-inline: 7.063rem;
+    padding-block-start: 5rem;
+    padding-block-end: 3.563rem;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+
+    &Header {
+      max-width: 27.375rem;
+
+      h2 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 70px;
+        text-align: left;
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+      }
+    }
+
+    &Form {
+      max-width: 37.125rem;
+
+      &Flex {
+        display: flex;
+        gap: 1.5rem;
+
+        > * {
+          flex-basis: 50%;
+          width: 100%;
+        }
+      }
+    }
+  }
 }
