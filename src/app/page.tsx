@@ -256,7 +256,53 @@ const About = () => {
               />
             </div>
           </div>
-          <div></div>
+          <div className={styles.aboutFlexContent}>
+            <h3>Mi tellus magna at</h3>
+            <p className={styles.paragraphLg}>
+              Aliquet eget purus eu nisl et eleifend. Arcu mi nulla odio.
+            </p>
+            <p className={styles.paragraphMd}>
+              Tristique et enim quisque gravida non parturient nunc a pharetra.
+              Est rhoncus porta faucibus sit nunc diam. Accumsan proin praesent
+              faucibus fermentum ipsum vulputate commodo viverra. Dui eget
+              aliquam mauris consectetur.
+            </p>
+            <article className={styles.aboutFlexContentWell}>
+              <p className={styles.pXL}>75+</p>
+              <div>
+                <p className={styles.overlineSm}>Large Statistic IPSUM</p>
+                <p className={styles.pItalic}>
+                  Nisi a id sit pulvinar non. Quis tristique et sem cras morbi
+                  lacus. Magna faucibus ultric.
+                </p>
+              </div>
+            </article>
+            <Link href="/specialty" className={styles.aboutFlexContentButton}>
+              Our Specialty Areas
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.00037 12H19.0004"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 4.99982L19 11.9998L12 18.9998"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
