@@ -1,6 +1,11 @@
 html {
   overflow-y: scroll;
   overflow-x: hidden;
+  width: 100vw;
+}
+
+html * {
+  box-sizing: border-box;
 }
 
 html,
