@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import SiteNav from "./components/site-nav";
 import SitePreNav from "./components/site-pre-nav";
+import SiteFooter from "./components/site-footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <News />
       <About />
       <Form />
+      <SiteFooter />
     </main>
   );
 }
