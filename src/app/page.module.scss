@@ -1,3 +1,5 @@
+// TODO: convert all pixel definitions that are not related to borders to rem units
+
 .main {
   position: relative;
   display: flex;
@@ -15,7 +17,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 160vh;
+    height: 170.5vh;
     z-index: 0;
     background: linear-gradient(#ffffff, #e4e4e7);
   }
@@ -52,8 +54,9 @@
   background-color: #ff5b01;
   border-radius: 100px;
   overflow: hidden;
-  min-width: 2rem;
-  height: 2rem;
+  min-width: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 
   display: flex;
   align-items: center;
@@ -66,6 +69,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh;
 
   h1 {
     display: flex;
@@ -229,6 +233,10 @@
   margin-block-start: 11rem;
   margin-block-end: 6.25rem;
 
+  &Header {
+    margin-block-start: 10rem;
+  }
+
   h2 {
     font-size: 96px;
     font-weight: 700;
@@ -239,6 +247,7 @@
   }
 
   &Flex {
+    padding-block-start: 10rem;
     display: flex;
     gap: 4rem;
     align-items: center;
@@ -402,6 +411,7 @@
 
     &Header {
       max-width: 27.375rem;
+      overflow: hidden;
 
       h2 {
         font-size: 64px;

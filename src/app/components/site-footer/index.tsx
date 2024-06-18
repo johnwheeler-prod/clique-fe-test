@@ -51,7 +51,10 @@ export default function SiteFooter() {
           </div>
           <div className={styles.footerFlexEnd}>
             <p>Follow Us</p>
-            <Link href="https://meta.com">
+            <Link
+              href="https://meta.com"
+              aria-label="Facebook icon that links to Facebook via meta.com"
+            >
               <svg
                 width="48"
                 height="48"
@@ -67,7 +70,11 @@ export default function SiteFooter() {
                 />
               </svg>
             </Link>
-            <Link href="https://x.com">
+            <Link
+              href="https://x.com"
+              aria-label="Twitter icon that links to X"
+            >
+              {/* TODO: getX icon to replace this one */}
               <svg
                 width="48"
                 height="48"
